@@ -2,7 +2,7 @@
 #write your name 
 print("Hello , my self Pal Anghan " )
 
-#two number find sum
+#two number find sum.
 a = 5
 b = 15
 print("SUM is : ", a+b)
