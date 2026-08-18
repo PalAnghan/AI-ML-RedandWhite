@@ -164,9 +164,35 @@ print("a mode completed.")
 
 file = open()
 
+file = open("modes.txt", "r+")
+content = file.read()
 
+print("r+ mode:")
+print(content)
 
+file.seek(0, 2)
+file.write("Content added using r+ mode.\n")
+file.close()
 
+file = open("modes_wplus.txt", "w+")
+file.write("Content written using w+ mode.\n")
+
+file.seek(0)
+
+print("w+ mode:")
+print(file.read())
+
+file.close()
+
+file = open("modes_aplus.txt", "a+")
+file.write("Content added using a+ mode.\n")
+
+file.seek(0)
+
+print("a+ mode:")
+print(file.read())
+
+file.close()
 
 
 
